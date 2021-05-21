@@ -22,7 +22,7 @@ Ans: a> grep -o Harry Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
  Ans; cat Harry_Potter_and_the_Goblet_of_Fire.txt | head -n 200 | tail -n 100
 
 6> How many unique words are present in the book?
-Ans: tr ' ' '\n' < Harry_Potter_and_the_Goblet_of_Fire | sort | uniq -c | wc -l
+Ans: tr ' ' '\n' < Harry_Potter_and_the_Goblet_of_Fire | sort | uniq -u | wc -l
 
 Processes, ports-:
 1> List your browser's process ids (pid) and parent process ids(ppid)
