@@ -3,20 +3,20 @@ Pipes-:
 Ans: wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
 
 2> Print the first three lines in the book
-Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | head -n 3
+Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | head  3
 
 3> Print the last 10 lines in the book
-Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | tail -n 10
+Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | tail  10
 
 4> How many times do the following words occur in the book?
 a.Harry
 b.Ron
 c.Hermione
 d.Dumbledore
-Ans: a> grep -io Harry Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
-     b> grep -io Ron Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
-     c> grep -io Hermione Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
-     d> grep -io Dumbledore Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
+Ans: a> grep -o Harry Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
+     b> grep -o Ron Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
+     c> grep -o Hermione Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
+     d> grep -o Dumbledore Harry_Potter_and_the_Goblet_of_Fire.txt | wc -l
 
  5> Print lines from 100 through 200 in the book
  Ans; cat Harry_Potter_and_the_Goblet_of_Fire.txt | head -n 200 | tail -n 100
