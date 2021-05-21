@@ -3,10 +3,10 @@ Pipes-:
 Ans: wget https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt
 
 2> Print the first three lines in the book
-Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | head  3
+Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | head -n 3
 
 3> Print the last 10 lines in the book
-Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | tail  10
+Ans: cat Harry_Potter_and_the_Goblet_of_Fire.txt | tail -n 10
 
 4> How many times do the following words occur in the book?
 a.Harry
